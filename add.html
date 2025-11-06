@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>상품 등록</title>
+<link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<div id="lock" class="lock" hidden>
+<div class="lock-card">
+<h2>접근 제한</h2>
+<p class="muted">등록 페이지는 비공개입니다. 비밀번호를 입력하세요.</p>
+<input id="pw" type="password" placeholder="Password" />
+<div class="actions">
+<button id="btnLogin" class="btn">입장</button>
+</div>
+<p class="muted small">* 클라이언트 측 간단 보호입니다. 완전한 보안은 서버가 필요합니다.</p>
+</div>
+</div>
+
+
+<div class="wrap" id="app" hidden>
+<header class="header">
+<h1>상품 등록</h1>
+<a class="btn" href="index.html">목록으로</a>
+</header>
+
+
+<section class="panel">
+<div class="row"><label>카테고리</label>
+<input list="cats" id="category" placeholder="예) 카테고리1" />
+<datalist id="cats"></datalist>
+</div>
+<div class="row"><label>상품명</label><input id="name" placeholder="예) 염소우유 50g" /></div>
+<div class="row"><label>가격(원)</label><input id="price" type="number" inputmode="numeric" placeholder="예) 2500" /></div>
+<div class="row"><label>이미지 URL</label><input id="img" placeholder="http(s):// 이미지 주소" /></div>
+<div class="row"><label>설명</label><textarea id="desc" placeholder="선택"></textarea></div>
+<div class="actions">
+<button id="save" class="btn primary">저장</button>
+<button id="wipe" class="btn danger">전체삭제</button>
+<span class="muted">LocalStorage에 저장됩니다.</span>
+<span class="spacer"></span>
+<button id="export" class="btn">내보내기(JSON)</button>
+<input id="importFile" type="file" accept="application/json" hidden />
+<button id="import" class="btn">가져오기(JSON)</button>
+</div>
+</section>
+</div>
+
+
+</html>

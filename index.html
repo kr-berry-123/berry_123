@@ -1,0 +1,35 @@
+<!-- ===== FILE: index.html ===== -->
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>상품 목록</title>
+<link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<div class="wrap">
+<header class="header">
+<h1>상품 목록</h1>
+<div class="toolbar">
+<a class="btn" href="add.html">상품 등록</a>
+<span class="badge">저장소: LocalStorage</span>
+</div>
+</header>
+
+
+<section class="panel">
+<div class="toolbar">
+<input id="q" placeholder="상품명 검색" />
+<select id="catFilter"><option value="">전체 카테고리</option></select>
+</div>
+<div id="list"></div>
+<div id="empty" class="empty" hidden>표시할 상품이 없습니다.</div>
+</section>
+</div>
+
+
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
