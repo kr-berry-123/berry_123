@@ -4,7 +4,7 @@
 (function(global){
 const STORAGE_FLAG='gh_products_auth_ok';
 // 기본 비밀번호 해시(예: 'roadin' 의 SHA-256). 처음엔 더미값. 아래를 교체하세요.
-let PASSWORD_HASH='937e8d5fbb48bd4949536cd65b8d35c426b80d2f830c5c308e2cdec422ae2244';
+let PASSWORD_HASH='9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08';
 
 
 async function sha256(text){
